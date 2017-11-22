@@ -128,7 +128,7 @@ The second one is to initialize our two member variables.
     var direction = Vector2(1.0, 0.0)
 
     func _ready():
-        screen_size = get_viewport_rect().size
+        screen_size = get_viewport().get_rect().size
         pad_size = get_node("left").get_texture().get_size()
         set_process(true)
         
